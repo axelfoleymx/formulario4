@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   root 'pages#index'
 
-  get 'pages/index'
+  get 'pages#index'
 
-  post 'pages/save_form'
+  post 'pages#save_form'
 
-  get 'pages/see_users'
+  get 'pages#see_users'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
