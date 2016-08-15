@@ -1,0 +1,26 @@
+<p> <%= flash[:notice] %></p>
+<h1>Pages#index</h1>
+<p>Find me in app/views/pages/index.html.erb</p>
+
+<form  accept-charset="UTF-8" action="<%= pages_save_form_path %>" method="POST">
+  <%= hidden_field_tag :authenticity_token,
+  form_authenticity_token %>
+  <div>
+    <p>Your Personal Information</p>
+    <input placeholder="Name" name="q">
+    <input placeholder="Years Old" name="r">
+    <input placeholder="your@email.com" name="s">
+  </div>
+
+    <div>
+      <p>Education</p>
+      <input placeholder="School" name="t">
+      <input placeholder="Career" name="u">
+
+    </div>
+
+  <div>
+      <input type="submit" class="btn btn-success" value="Send">
+  </div>
+
+  </form>

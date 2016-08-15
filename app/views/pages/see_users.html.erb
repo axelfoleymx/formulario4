@@ -1,0 +1,34 @@
+<p> <%= flash[:notice] %></p>
+<h1>Usuarios Registrados</h1>
+<p>Find me in app/views/pages/see_users.html.erb</p>
+
+<% @users.each do |u|%>
+<p>
+  <%= u.name %>
+</p>
+<p>
+  <%= u.year %>
+</p>
+
+<p>
+  <%= u.email %>
+</p>
+
+<%end%>
+
+<div class="container">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td>Career Name</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @educations.each do |e| %>
+    <tr>
+      <td><%= e.career %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<div>

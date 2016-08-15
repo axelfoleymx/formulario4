@@ -1,0 +1,30 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: formulario3
+  username: postgres
+  password: test
+
+development:
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
+    database: formulario3
+    username: postgres
+    password: test
+test:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: formulario3
+  username: postgres
+  password: test
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: formulario3
+  username: postgres
+  password: test
