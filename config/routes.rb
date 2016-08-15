@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 
   get 'pages#index'
 
-  post 'pages#save_form'
-
   get 'pages#see_users'
+
+  post 'pages#save_form'
 
 end
